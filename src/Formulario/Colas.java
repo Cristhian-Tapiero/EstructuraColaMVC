@@ -204,10 +204,10 @@ public class Colas extends javax.swing.JFrame {
     }//GEN-LAST:event_agregarBotonActionPerformed
 
     private void borrarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_borrarButtonActionPerformed
-        if(extraer_dato() == "No hay datos por extraer"){
+        extraer_dato();
+        if( raiz == null){
             SysoArea.setText("Cola vacia...");
         }else{
-            extraer_dato();
             SysoArea.setText(imprimir());
         }
         
